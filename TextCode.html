@@ -1,0 +1,23 @@
+<!DOCTYPEHTML>
+<html lang="en">
+  <head>
+    <h1 style="color: salmon;">
+      This Is A Salmon Header
+    </h1>
+  </head>
+  <body> <button id="themeBtn">Switch to Dark Mode</button>
+<p>This text will turn white when you click the button.</p>
+
+<script>
+  const themeBtn = document.getElementById('themeBtn');
+
+  themeBtn.addEventListener('click', () => {
+      // 1. Change the page background to black
+      document.body.style.backgroundColor = 'black';
+      
+      // 2. Change the page text color to white
+      document.body.style.color = 'white';
+  });
+</script>
+</body>
+</html>
